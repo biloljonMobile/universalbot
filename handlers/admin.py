@@ -19,8 +19,8 @@ USERS_PER_PAGE = 5
 async def admin_panel(message: types.Message):
     if message.from_user.id != ADMIN_ID:
         pass
-
-    await send_users(message, page=1)
+    else:
+        await send_users(message, page=1)
 
 
 
